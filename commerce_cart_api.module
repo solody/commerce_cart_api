@@ -25,6 +25,7 @@ function commerce_cart_api_entity_field_access($operation, FieldDefinitionInterf
   if ($operation == 'view') {
     if ($entity_type_id == 'commerce_order') {
       $allowed_fields = [
+        'type',
         'order_id',
         'uuid',
         'order_number',
